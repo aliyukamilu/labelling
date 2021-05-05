@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
   <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
-
+  <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.min.css">
   <link rel="stylesheet" href="assets/css/components.min.css">
@@ -82,68 +82,88 @@
       <!-- Start app main Content -->
       <div class="main-content">
         <section class="section">
-          <div class="section-header">
-            <h1><i class="fas fa-home fa-2x"></i> Dashboard</h1>
-            <div class="section-header-breadcrumb">
-            </div>
-          </div>
-
-          <div class="section-body">
-            <h2 class="section-title">Dashboard</h2>
-            <p class="section-lead">view All the Data Labels available on the site.</p>
-          </div>
           <div class="row">
             <div class="col-md-12">
-              <div class="card p-4">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="card card-large-icons">
-                      <div class="card-icon bg-primary text-white"><i class="fas fa-book"></i></div>
-                      <div class="card-body">
-                        <h4>Red Berry</h4>
-                        <p>General settings such as, site title, site description, address and so on.</p>
-                        <a href="surveydes.html" class="card-cta">Take Survey <i class="fas fa-chevron-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card card-large-icons">
-                      <div class="card-icon bg-primary text-white"><i class="fas fa-book"></i></div>
-                      <div class="card-body">
-                        <h4>Blueberry Mathematics</h4>
-                        <p>Label the questions based on topic.</p>
-                        <a href="surveydes.html" class="card-cta">Take survey<i class="fas fa-chevron-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card card-large-icons">
-                      <div class="card-icon bg-primary text-white"><i class="fas fa-book"></i></div>
-                      <div class="card-body">
-                        <h4>Blueberry Physics Labelling</h4>
-                        <p>Thpusands of physics questions to Label.</p>
-                        <a href="surveydes.html" class="card-cta">Take survey <i class="fas fa-chevron-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card card-large-icons">
-                      <div class="card-icon bg-primary text-white"><i class="fas fa-book"></i></div>
-                      <div class="card-body">
-                        <h4>Red Berry chemistry</h4>
-                        <p>Over 300 millions of questions to Label baesd on chemistry WAEC.</p>
-                        <a href="surveydes.html" class="card-cta">Take survey <i class="fas fa-chevron-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
+              <div class="card card-warning">
+                <div class="card-header">
+                  <h4>Blueberry Mathematics</h4>
+
+                </div>
+                <div class="card-body">
+                  <table class="table table-bordered dataTable">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Question</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Whats the mark on your face ?</td>
+                        <td>Indices</td>
+                        <td><button class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModal">Edit</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Which time are u coming ?</td>
+                        <td>Trigonometry</td>
+                        <td><button class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModal">Edit</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Whats the mark on your face ?</td>
+                        <td>Geometry</td>
+                        <td><button class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModal">Edit</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
-
         </section>
       </div>
 
+      <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Edit</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <fieldset>
+                <p class="topic"><span style="color: grey;">Topic :</span> Geometry & Arithmetic</p>
+                <p class="que"><span style="color: grey;">Question :</span> Find the solution of the following Tag
+                  when following steps to solve indices.</p>
+
+                <select class="form-control" name="topic_opt" id="">
+                  <option value="">Change Topic :</option>
+                  <option value="">Indices</option>
+                  <option value="">Logarithm</option>
+                  <option value="">Number Base</option>
+                  <option value="">Trigonometry</option>
+                  <option value="">Statistics</option>
+                  <option value="">Probability</option>
+                  <option value="">Surds</option>
+                </select>
+              </fieldset>
+            </div>
+            <div class="modal-footer bg-whitesmoke br">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Start app Footer part -->
       <footer class="main-footer">
         <div class="footer-left">
@@ -161,6 +181,8 @@
   <script src="js/CodiePie.js"></script>
 
   <!-- JS Libraies -->
+  <script src="js/slide.js"></script>
+  <script src="assets/modules/datatables/datatables.min.js"></script>
   <script src="assets/modules/jquery.sparkline.min.js"></script>
   <script src="assets/modules/chart.min.js"></script>
   <script src="assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>

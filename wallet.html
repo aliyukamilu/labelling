@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
   <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.min.css">
@@ -48,9 +49,9 @@
 
       <!-- Start app top navbar -->
       <nav class="navbar navbar-expand-lg main-navbar">
-        <ul class="navbar-nav mr-auto">
-          <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-        </ul>
+        <form class="form-inline mr-auto">
+
+        </form>
         <ul class="navbar-nav navbar-right">
           <li class="dropdown">
             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
@@ -95,82 +96,55 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1><i class="fas fa-poll-h fa-2x"></i> Bluberry Mathematics</h1>
+            <h1><i class="fas fa-wallet fa-2x"></i> Wallet</h1>
             <div class="section-header-breadcrumb">
             </div>
           </div>
 
-          <div class="section-body">
-            <h2 class="section-title">Blueberry mathematcis</h2>
-            <p class="section-lead">Over millions of them to Label.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card p-4">
+                <h4>Pending : ₦115,000</h4>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card p-4">
+                <h4>Earned : ₦225,000</h4>
+              </div>
+            </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card p-4">
-                <form action="" class="registration-form">
-                  <fieldset>
-                    <p class="topic"><span style="color: grey;">Topic :</span> Geometry & Arithmetic</p>
-                    <p class="que"><span style="color: grey;">Question :</span> Find the solution of the following Tag
-                      when following steps to solve indices.</p>
-
-                    <label for="" class="mb-2" style="color: grey; font-size: 20px; font-weight: bold;">Change
-                      topic</label>
-                    <select class="form-control col-lg-6" name="topic_opt" id="">
-                      <option value="">select the topic</option>
-                      <option value="">Indices</option>
-                      <option value="">Logarithm</option>
-                      <option value="">Number Base</option>
-                      <option value="">Trigonometry</option>
-                      <option value="">Statistics</option>
-                      <option value="">Probability</option>
-                      <option value="">Surds</option>
-                    </select>
-                    <div class="row mt-5">
-                      <div class="col-md-6">
-                        <a href="#" class="btn btn-block btn-previous"><span class="iconify" data-inline="false"
-                            data-icon="ant-design:left-outlined" style="font-size: 24px; color: #fff;"></span>
-                          Previous Slide</a>
-                      </div>
-                      <div class="col-md-6">
-                        <a href="#" class="btn btn-block btn-next">
-                          Next <span class="iconify" data-inline="false" data-icon="akar-icons:chevron-right"
-                            style="font-size: 24px; color: #fff;"></span></a>
-                      </div>
-                    </div>
-
-
-                  </fieldset>
-                  <fieldset>
-                    <p class="topic"><span style="color: grey;">Topic :</span> Geometry & Arithmetic</p>
-                    <p class="que"><span style="color: grey;">Question :</span> Find the solution of the following Tag
-                      when following steps to solve indices.</p>
-
-                    <select class="form-control col-lg-6" name="topic_opt" id="">
-                      <option value="">select the topic</option>
-                      <option value="">Indices</option>
-                      <option value="">Logarithm</option>
-                      <option value="">Number Base</option>
-                      <option value="">Trigonometry</option>
-                      <option value="">Statistics</option>
-                      <option value="">Probability</option>
-                      <option value="">Surds</option>
-                    </select>
-                    <div class="row mt-5">
-                      <div class="col-md-6">
-                        <a href="#" class="btn btn-block btn-previous"><span class="iconify" data-inline="false"
-                            data-icon="ant-design:left-outlined" style="font-size: 24px; color: #fff;"></span>
-                          Previous Slide</a>
-                      </div>
-                      <div class="col-md-6">
-                        <a href="#" class="btn btn-default btn-block btn-next">
-                          Next <span class="iconify" data-inline="false" data-icon="akar-icons:chevron-right"
-                            style="font-size: 24px; color: #fff;"></span></a>
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <table class="table table-bordered dataTable">
+                <thead>
+                  <td scope="col">Survey</td>
+                  <td scope="col">status</td>
+                  <td scope="col">Questions</td>
+                  <td scope="col">Price</td>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Blueberry Mathematics</td>
+                    <td class="text-success">paid</td>
+                    <td>1000 questions</td>
+                    <td>₦25,000</td>
+                  </tr>
+                  <tr>
+                    <td>Blueberry chemistry</td>
+                    <td class="text-danger">pending</td>
+                    <td>1000 questions</td>
+                    <td>pending</td>
+                  </tr>
+                  <tr>
+                    <td>Havard university mathematcis</td>
+                    <td class="text-success">paid</td>
+                    <td>10000 questions</td>
+                    <td>₦100,000</td>
+                  </tr>
+                </tbody>
+              </table>
+              
             </div>
           </div>
         </section>
@@ -194,6 +168,7 @@
   <script src="js/slide.js"></script>
 
   <!-- JS Libraies -->
+  <script src="assets/modules/datatables/datatables.min.js"></script>
   <script src="assets/modules/jquery.sparkline.min.js"></script>
   <script src="assets/modules/chart.min.js"></script>
   <script src="assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>

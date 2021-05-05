@@ -1008,6 +1008,7 @@ select.form-control:not([size]):not([multiple]) {
 .card.card-large-icons {
   display: flex;
   flex-direction: row;
+  border: 1px solid #f4f4f4 !important;
 }
 .card.card-large-icons .card-icon {
   display: flex;
@@ -1040,6 +1041,7 @@ select.form-control:not([size]):not([multiple]) {
 .card.card-large-icons .card-body a.card-cta i {
   margin-left: 7px;
 }
+
 .card.bg-primary,
 .card.bg-danger,
 .card.bg-success,
@@ -1262,13 +1264,13 @@ table tr:hover .table-links {
   margin: 0 3px;
 }
 .page-item.active .page-link {
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #115c83;
+  border-color: #115c83;
 }
 .page-item.disabled .page-link {
   border-color: transparent;
-  background-color: #a892c9;
-  color: #563d7c;
+  background-color: #115c83;
+  color: #fff;
   opacity: 0.6;
 }
 .page-link {
@@ -1649,8 +1651,8 @@ h6 .badge {
 }
 .btn-primary,
 .btn-primary.disabled {
-  box-shadow: 0 2px 6px #7a58ad;
-  background-color: #563d7c;
+  box-shadow: 0 2px 6px #115c83;
+  background-color: #115c83;
   border-color: #563d7c;
 }
 .btn-primary:focus,
@@ -1665,7 +1667,7 @@ h6 .badge {
 .btn-primary:hover,
 .btn-primary.disabled:active,
 .btn-primary.disabled:hover {
-  background-color: #3e2c5a !important;
+  background-color: #115c83 !important;
 }
 .btn-outline-primary,
 .btn-outline-primary.disabled {

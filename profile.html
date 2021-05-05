@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>STEAMLABEL</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/css/components.min.css">
+  <script src="https://kit.fontawesome.com/3e222edc62.js" crossorigin="anonymous"></script>
+
+  <script src="js/iconify.js"></script>
+
+  <style>
+    form.registration-form fieldset {
+      display: none;
+    }
+
+    .btn-next,
+    .btn-previous {
+      background-color: #115c83 !important;
+      color: #fff !important;
+    }
+  </style>
+</head>
+
+<body class="layout-4">
+  <!-- Page Loader -->
+  <div class="page-loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+
+      <!-- Start app top navbar -->
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <ul class="navbar-nav mr-auto">
+          <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Hi, Michelle Green</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="#" class="dropdown-item has-icon text-danger"><i class="fas fa-sign-out-alt"></i>
+                Logout</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Start main left sidebar menu -->
+      <div class="main-sidebar sidebar-style-3">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index-2.html">STEAMLABEL</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index-2.html">CP</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="dropdown">
+              <a href="index.html" class="nav-link"><i class="fas fa-home fa-2x"></i> <span>Dashboard</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="mysurvey.html" class="nav-link"><i class="fas fa-poll-h fa-2x"></i> <span>My Surveys</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="profile.html" class="nav-link"><i class="fas fa-address-card fa-2x"></i> <span>Profile</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="wallet.html" class="nav-link"><i class="fas fa-wallet fa-2x"></i> <span>Wallet</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Start app main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1><i class="fas fa-address-card fa-2x"></i> Profile</h1>
+            <div class="section-header-breadcrumb">
+            </div>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title">Hi, Michelle!</h2>
+            <p class="section-lead">Change information about yourself on this page.</p>
+            <div class="row">
+              <div class="col-md-5">
+
+                <div class="card profile-widget">
+                  <div class="card-header">
+                    <h5>Personal information</h5>
+                  </div>
+                  <div class="card-body">
+                    <p><span style="color: #000; font-weight: bold;">Name:</span> Michille Jasmine</p>
+                    <p><span style="color: #000; font-weight: bold;">Address:</span> 23 Sabo bakin zuwo Road</p>
+                    <p><span style="color: #000; font-weight: bold;">Phone Number:</span> +23480813571</p>
+                    <p><span style="color: #000; font-weight: bold;">Email Address:</span> michille@jasmine.com</p>
+                    <p><span style="color: #000; font-weight: bold;">State:</span> Jigawa state.</p>
+                    <button class="btn-primary btn" data-toggle="modal" data-target="#profmodal">Edit
+                      profile</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-7">
+
+                <div class="card profile-widget">
+                  <div class="card-header">
+                    <h5>Card information</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="card p-4" style="border-radius: 10px;background: linear-gradient(177.23deg, #1F2C4F -13.49%, #3A49F9 109.75%); color: #fff;">
+                      <!--  -->
+                      <div class="col-md-12 row">
+                        <div class="col-md-4">
+                          <i class="fas fa-university fa-lg"></i> Bank name
+                          <p class="ml-3">GT Bank</p>
+                        </div>
+                        <div class="col-md-4">
+                          <i class="fas fa-money-check fa-lg"></i> Account Number
+                          <p class="ml-3">2386856996</p>
+                        </div>
+                        <div class="col-md-4">
+                          <i class="fas fa-university fa-lg"></i> Account Name
+                          <p class="ml-3">Michille Green</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <button class="btn-primary btn col-md-2" data-toggle="modal" data-target="#accmodal">Edit</button>
+                    <div class="card p-4 mt-3" style="border-radius: 10px;">
+                      <!-- background: linear-gradient(177.23deg, #1F2C4F -13.49%, #3A49F9 109.75%); color: #fff; -->
+                      <div class="container text-center">
+                        <p>No Bank Details Found.</p>
+                        <button class="btn-primary btn" data-toggle="modal" data-target="#addmodal">Add bank Details</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="profmodal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Edit Profile</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" value="Michille Jasmine" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Address</label>
+                  <input type="text" value="23 Sabo bakin zuwo Road" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="number" value="23480813571" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" value="michille@jasmine.com" class="form-control">
+                </div>
+                <label>State</label>
+                <select class="custom-select">
+                  <option selected>Select state</option>
+                  <option value="Abia">Abia</option>
+                  <option value="Adamawa">Adamawa</option>
+                  <option value="Akwa Ibom">Akwa Ibom</option>
+                  <option value="Anambra">Anambra</option>
+                  <option value="Bauchi">Bauchi</option>
+                  <option value="Bayelsa">Bayelsa</option>
+                  <option value="Benue">Benue</option>
+                  <option value="Borno">Borno</option>
+                  <option value="Cross Rive">Cross River</option>
+                  <option value="Delta">Delta</option>
+                  <option value="Ebonyi">Ebonyi</option>
+                  <option value="Edo">Edo</option>
+                  <option value="Ekiti">Ekiti</option>
+                  <option value="Enugu">Enugu</option>
+                  <option value="FCT">Federal Capital Territory</option>
+                  <option value="Gombe">Gombe</option>
+                  <option value="Imo">Imo</option>
+                  <option value="Jigawa">Jigawa</option>
+                  <option value="Kaduna">Kaduna</option>
+                  <option value="Kano">Kano</option>
+                  <option value="Katsina">Katsina</option>
+                  <option value="Kebbi">Kebbi</option>
+                  <option value="Kogi">Kogi</option>
+                  <option value="Kwara">Kwara</option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Nasarawa">Nasarawa</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Ogun">Ogun</option>
+                  <option value="Ondo">Ondo</option>
+                  <option value="Osun">Osun</option>
+                  <option value="Oyo">Oyo</option>
+                  <option value="Plateau">Plateau</option>
+                  <option value="Rivers">Rivers</option>
+                  <option value="Sokoto">Sokoto</option>
+                  <option value="Taraba">Taraba</option>
+                  <option value="Yobe">Yobe</option>
+                  <option value="Zamfara">Zamfara</option>
+                </select>
+              </form>
+            </div>
+            <div class="modal-footer bg-whitesmoke br">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" tabindex="-1" role="dialog" id="accmodal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Edit Card Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label>Bank Name</label>
+                  <input type="text" value="GT Bank" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Account Number</label>
+                  <input type="text" value="2386856996" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Account Name</label>
+                  <input type="text" value="Michille Green" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer bg-whitesmoke br">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" tabindex="-1" role="dialog" id="addmodal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add Bank Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label>Bank Name</label>
+                  <input type="text" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Account Number</label>
+                  <input type="text" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Account Name</label>
+                  <input type="text" value="" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer bg-whitesmoke br">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start app Footer part -->
+      <footer class="main-footer">
+        <div class="footer-left">
+          <div class="bullet"></div> <a href="#">STEAMLABEL</a>
+        </div>
+        <div class="footer-right">
+
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/bundles/lib.vendor.bundle.js"></script>
+  <script src="js/CodiePie.js"></script>
+  <script src="js/slide.js"></script>
+
+  <!-- JS Libraies -->
+  <script src="assets/modules/jquery.sparkline.min.js"></script>
+  <script src="assets/modules/chart.min.js"></script>
+  <script src="assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+  <script src="assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="js/page/index.js"></script>
+
+  <!-- Template JS File -->
+  <script src="js/scripts.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+<!--   Tue, 07 Jan 2020 03:35:12 GMT -->
+
+</html>
